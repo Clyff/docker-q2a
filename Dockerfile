@@ -9,7 +9,7 @@ RUN apt-get update \
         && rm -r /var/lib/apt/lists/*
 
 
-RUN curl -o /q2a.zip http://www.question2answer.org/question2answer-latest.zip \
+RUN curl -o /q2a.zip https://www.question2answer.org/question2answer-latest.zip \
 && unzip /q2a.zip -d /q2a     \
 && mv /q2a/*/* /var/www/html/ \
 && rm /q2a.zip                \
